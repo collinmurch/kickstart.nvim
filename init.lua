@@ -120,6 +120,7 @@ end)
 
 -- Set tab width to 4 spaces
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
 
 -- Enable break indent
 vim.opt.breakindent = true
