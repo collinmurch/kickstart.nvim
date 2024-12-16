@@ -17,7 +17,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "[P]aste" })
 
 
 -- Copy to system clipboard from register
-	vim.keymap.set("n", "<leader>y", function()
-		vim.fn.setreg("+", vim.fn.getreg('"'))
-		vim.api.nvim_out_write("Copied register to system clipboard\n")
-	end, { desc = "Put [Y]ank in clipboard" })
+vim.keymap.set("n", "<leader>y", function()
+	vim.fn.setreg("+", vim.fn.getreg('"'))
+	vim.api.nvim_out_write("Copied register to system clipboard\n")
+end, { desc = "Put [Y]ank in clipboard" })

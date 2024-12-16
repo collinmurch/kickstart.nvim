@@ -1,4 +1,5 @@
-require('core')
+require('opt')
+require('keymap')
 
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd("TextYankPost", {
